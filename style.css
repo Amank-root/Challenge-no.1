@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+:root{
+    --back-hu: url('./images/pattern-background-desktop.svg');
+    --desk-m: 22em;
+    --fonty: #9096b3
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #dfe8ff;
+    overflow:hidden;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.something {
+    background: var(--back-hu) center center no-repeat;
+    background-size: cover;
+    width: inherit;
+    height: 62vh;
+}
+/* .card{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    border: black solid 2px;
+    margin: auto auto;
+} */
+.card {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    display: flex;
+}
+.cartem {
+    display: flex;
+    width: var(--desk-m);
+    flex-direction: column;
+    background-color: white;
+    height: 70vh;
+    border-radius: 15px;
+    /* border: black solid 2px; */
+    margin: auto auto;
+}
+.main {
+    padding: 0 1.8rem;
+}
+.cont{
+    margin-top: 0.9em;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    /* font-size: calc(1rem - 0.em); */
+    font-family: 'Red Hat Display', sans-serif;
+}
+.cont h1{
+    font-family:  sans-serif;
+    /* font-size: calc(2rem - 0.3rem); */
+    /* line-height: 2.5; */
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.cont p {
+    /* font-size: 16px; */
+    font-weight: bolder;
+    /* font-weight: 500; */
+    padding: 1em 0 ;
+    color: var(--fonty);
+}
+.midbox {
+    font-family: sans-serif;
+    padding: 1.2em;
+    display: flex;
+    height: 10vh;
+    background-color: hsl(225, 100%, 98%);
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.sysy {
+    height: 100%;
+    width: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.price{
+    line-height: 1.5;
+}
+.price p {
+    color: var(--fonty);
+}
+.img {
+    background: url(./images/icon-music.svg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 25%;
+    margin-right: 0.8em;
+}
+.sidecon{
+    text-decoration: underline;
+    color: #382ae1;
+    cursor: pointer;
+    font-weight: 900;
+}
+.but {
+    margin: 1em 0 0;
+    text-align: center;
+}
+.btn {
+    cursor: pointer;
+}
+.btn:nth-child(1) {
+    font-weight: 700;
+    font-family: sans-serif;
+    color: white;
+    box-shadow: 5px 11px 18px 0px #3929e266;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    background-color: #3929e2;
+    border-radius: 10px;
+    align-items: center;
+    font-size: small;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+}
+.btn:nth-child(2){
+    color: #939bae;
+    margin-top: 2em;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: smaller;
+}
+@media screen and (min-width: 375px) {
+    :root{
+        --back-hu: url('./images/pattern-background-mobile.svg');
+        --desk-m: 20em;
+    }
+}
+@media screen and (min-width: 1440px) {
+    :root{
+        --desk-m: 22em;
+        --back-hu: url('./images/pattern-background-desktop.svg');
+    }
+}
