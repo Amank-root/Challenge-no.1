@@ -137,7 +137,7 @@ body{
     font-family: sans-serif;
     font-size: smaller;
 }
-.btn:visited, .btn:focus, .btn:focus-visible {
+.btn:hover, .btn:visited, .btn:focus, .btn:focus-visible {
     background-color: black;
     color: white;
 }
